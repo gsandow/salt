@@ -1,0 +1,12 @@
+/etc/bashrc:
+  file.append:
+    - text:
+      - export PROMPT_COMMAND='{ msg=$(history 1 | { read  m k w x y; echo $y; });logger -p local4.info $(who am i):[`pwd`] "$msg"; }'
+      - alias vi='vim'
+      - alias ..='cd ..'
+      - alias grep='grep --color=auto'
+  file.managed:
+    - name: /etc/bashrc
+    - source: salt://init/files/bashrc
+    - backup: minion
+    - mode: 644
