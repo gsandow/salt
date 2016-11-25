@@ -10,3 +10,5 @@ base:
     - roles.web
   'test02.wankr.com.cn':
     - roles.web
+  'testweb1':
+    - roles.web

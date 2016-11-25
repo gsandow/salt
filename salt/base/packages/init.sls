@@ -2,6 +2,7 @@ package:
   pkg.installed:
     - pkgs:
       - pcre-devel
+      - openssl
       - openssl-devel
       - libxml2
       - libxml2-devel
@@ -19,3 +20,7 @@ package:
       - mhash 
       - mhash-devel 
       - mcrypt 
+      - ncurses-devel 
+      - libaio-devel 
+      - cmake
+      - gcc-c++ 
