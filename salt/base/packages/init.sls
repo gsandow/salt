@@ -1,9 +1,21 @@
 package:
-  pkg:
-    - names:
+  pkg.installed:
+    - pkgs:
       - pcre-devel
       - openssl-devel
       - libxml2
       - libxml2-devel
       - libxslt-devel
-    - installed
+      - zlib-devel 
+      - libjpeg-turbo-devel
+      - freetype-devel 
+      - libpng-devel 
+      - gd-devel 
+      - libcurl-devel 
+      - openssl-devel 
+      - libtool 
+      - libtool-ltdl-devel  
+      - libmcrypt-devel
+      - mhash 
+      - mhash-devel 
+      - mcrypt 
