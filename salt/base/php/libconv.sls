@@ -12,7 +12,7 @@ libiconv_compile:
   cmd.run:
     - cwd: /usr/local/src/libiconv-1.14
     - names:
-      - ./configure  --prefix=/usr/local/libiconv
+      - ./configure  --prefix=/usr/local/libiconv && make
       - make install
     - unless: test -d /usr/local/libiconv
     - watch_in:

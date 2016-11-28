@@ -2,6 +2,7 @@
 
 include:
   - packages
+  - php.libconv
 
 
 /usr/local/src/php-5.5.30.tar.bz2:
