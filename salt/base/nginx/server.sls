@@ -1,5 +1,5 @@
 include:
-  - users.nginx
+  - users.www
   - nginx.install
 
 server-nginx:

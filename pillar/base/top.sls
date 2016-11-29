@@ -3,12 +3,19 @@ base:
     - zabbix.agent
     - users
   'passport*.wankr.com.cn':
-    - roles.web
+    - roles.www
+    - roles.java
   'ytadmin*.wankr.com.cn':
-    - roles.web
+    - roles.www
   'www.wankr.com.cn':
-    - roles.web
+    - roles.www
   'test02.wankr.com.cn':
+    - roles.admin
+  'testweb*':
     - roles.web
+
+
   'testweb1':
-    - roles.web
+    - roles.redis_master
+  'testweb2':
+    - roles.redis_slave
