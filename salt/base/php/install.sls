@@ -3,6 +3,8 @@
 include:
   - packages
   - php.libconv
+  - zabbix.agent
+  - salt.minion
 
 
 /usr/local/src/php-5.5.30.tar.bz2:
@@ -48,6 +50,17 @@ php_compile:
     - user: root
     - group: root
     - backup: minion
+nginx-roles:
+  file.append:
+    - name: /etc/salt/roles
+    - text:
+      - 'php'
+    - require:
+      - file: roles
+      - service: server-php
+      - service: salt-minion
+    - watch_in:
+      - module: sync_grains
 {{ logdir }}:
   cmd.run:
     - name: mkdir -p {{ logdir }}

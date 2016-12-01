@@ -1,4 +1,2 @@
 include:
-  - packages
-  - redis.install
-  - redis.server
+  - mysql.install

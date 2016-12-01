@@ -6,6 +6,6 @@ yum_repo_release:
 test02_repo:
   file.managed:
     - name: /etc/yum.repos.d/test02.repo
-    - source: salt://init/files/test02.repo
+    - source: salt://initial/files/test02.repo
     - backup: minion
     - mode: 644

@@ -1,4 +1,5 @@
 include:
+  - initial
   - salt.minion
 
 zabbix-agent:

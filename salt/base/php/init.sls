@@ -1,6 +1,6 @@
 include:
   - packages
-  - users.nginx
+  - users.www
   - php.install
   - php.server
 

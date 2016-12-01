@@ -1,4 +1,4 @@
-server-redis:
+server-mysql:
   service.running:
-    - name: redis
+    - name: mysql
     - enable: True
