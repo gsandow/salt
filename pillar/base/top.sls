@@ -16,6 +16,9 @@ base:
 
 
   'testweb1':
-    - roles.redis_master
+    - roles.redis_server1
   'testweb2':
-    - roles.redis_slave
+    - roles.redis_server1
+  'testdb':
+    - roles.redis_server1
+    - roles.db

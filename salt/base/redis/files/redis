@@ -12,13 +12,13 @@
 [ "$NETWORKING" = "no" ] && exit 0
 
 redis="/usr/local/redis/bin/redis-server"
-prog=$(basename $redis)
+prog=/var/run/redis_{{pillar['redis-server1'][ redis_role ]['port']}}.pid
 
-REDIS_CONF_FILE="/usr/local/redis/conf/redis.conf"
+REDIS_CONF_FILE="/usr/local/redis/conf/{{pillar['redis-server1'][ redis_role ]['port']}}.conf"
 
 [ -f /etc/sysconfig/redis ] && . /etc/sysconfig/redis
 
-lockfile=/var/lock/subsys/redis_{{pillar['redis']['port']}}
+lockfile=/var/lock/subsys/redis_{{pillar['redis-server1'][ redis_role ]['port']}}
 
 start() {
     [ -x $redis ] || exit 5
