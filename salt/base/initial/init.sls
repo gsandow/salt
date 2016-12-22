@@ -1,6 +1,5 @@
 include:
   - initial.command
   - initial.epel
-  - initial.history
+  - initial.profile
   - initial.rsyslog
-  - initial.hosts

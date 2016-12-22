@@ -3,4 +3,4 @@ include:
   - users.www
   - php.install
   - php.server
-
+  - php.profile

@@ -1,8 +1,8 @@
 include:
   - users.www
-  - nginx.install
+  - tomcat.install
 
-server-nginx:
+server-tomcat:
   service.running:
-    - name: nginx
+    - name: tomcat
     - enable: True

@@ -1,10 +1,10 @@
 base:
   '*':
     - zabbix.agent
+    - roles.common
     - users
   'passport*.wankr.com.cn':
-    - roles.www
-    - roles.java
+    - roles.web
   'ytadmin*.wankr.com.cn':
     - roles.www
   'www.wankr.com.cn':
