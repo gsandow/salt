@@ -50,7 +50,7 @@ php_compile:
     - user: root
     - group: root
     - backup: minion
-nginx-roles:
+php-roles:
   file.append:
     - name: /etc/salt/roles
     - text:
@@ -61,7 +61,3 @@ nginx-roles:
       - service: salt-minion
     - watch_in:
       - module: sync_grains
-{{ logdir }}:
-  cmd.run:
-    - name: mkdir -p {{ logdir }}
-    - unless: test -d {{ logdir }}

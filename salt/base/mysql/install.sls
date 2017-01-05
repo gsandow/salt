@@ -37,7 +37,7 @@ mysql_conf:
     - cmd.wait:
       - watch:
         - cmd: make_mysql
-nginx-roles:
+mysql-roles:
   file.append:
     - name: /etc/salt/roles
     - text:

@@ -96,7 +96,6 @@
 # -----------------------------------------------------------------------------
 export CATALINA_HOME="/usr/local/tomcat"
 export CATALINA_OPTS="-server -Xms528m -Xmx528m -XX:PermSize=256m -XX:MaxPermSize=358m"
-export CATALINA_PID=$CATALINA_HOME/catalina.pid
 
 export JAVA_OPTS="-Djava.awt.headless=true -Dfile.encoding=UTF-8
            -server -Xms1024m -Xmx1024m
